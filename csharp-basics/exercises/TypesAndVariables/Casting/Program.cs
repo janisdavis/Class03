@@ -10,35 +10,34 @@ namespace Casting
     {
         static void Main(string[] args)
         {
-            First();
-            Second();
+            first();
+            second();
+
             Console.ReadKey();
         }
 
-        static void First()
+        static void first()
         {
-            string a = "1";
+            String[] args;   
+            int a = 1;
             int b = 2;
             int c = 3;
-            double d = 4;
-            float e = 5;
-
-            //fixme - should be 15 :|
-            //int sum = a + b + c + d + e;
-            //Console.WriteLine(sum);
+            int d = 4;
+            int e = 5;
+            int sum = a + b + c + d + e;
+            Console.WriteLine(sum);
         }
 
-        static void Second()
+        static void second()
         {
-            string a = "1";
-            int b = 2;
-            int c = 3;
-            double d = 4.2;
+            String[] args;
+            float a = 1;
+            float b = 2;
+            float c = 3;
+            float d = 4.2f;
             float e = 5.3f;
-
-            //fixme - should be 15.5 :| 
-            //float sum = a + b + c + d + e;
-            //Console.WriteLine(sum);
-        }
+            float sum = a + b + c + d + e;
+            Console.WriteLine(sum);
+                }
     }
 }
