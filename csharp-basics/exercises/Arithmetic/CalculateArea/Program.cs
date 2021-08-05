@@ -76,13 +76,15 @@ namespace CalculateArea
             // Get input from user
             Console.WriteLine("What is the circle's radius? ");
             //todo
-            var keyboard = Console.ReadLine();
-
-            decimal.TryParse(keyboard, out var radius);
+            
+            double radius, area;
+            radius = Convert.ToDouble(Console.ReadLine());
+            area = Math.PI * radius * radius;
+            Console.WriteLine("The circle's area is: " + Math.Round(area),2);
+            Console.ReadKey();
 
             // Display output
-            Console.WriteLine("The circle's area is "
-                    + Geometry.areaOfCircle(radius));
+            
         }
 
         public static void calculateRectangleArea()
