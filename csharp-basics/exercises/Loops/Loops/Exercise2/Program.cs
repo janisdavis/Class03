@@ -6,8 +6,10 @@ namespace Exercise2
     {
         static void Main(string[] args)
         {
-            int i, n;
+            int i, n, num;
             
+            Console.WriteLine("Input your number");
+            num = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Input number of terms : ");
 
             n = Convert.ToInt32(Console.ReadLine());
@@ -16,11 +18,22 @@ namespace Exercise2
             */
             for (i = 0; i < n; i++)
             {
-              //  Console.WriteLine(Pow(i,n));
+                Console.WriteLine(Pow(i,n));
             }
 
             Console.ReadKey();
 
+        }
+
+        static int Pow(int number, int times)
+        {
+            var a = number;
+            for (var i = times; i > 1; i--)
+            {
+                a *= number;
+            }
+
+            return a;
         }
     }
 }
