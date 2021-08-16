@@ -11,17 +11,16 @@ namespace Exercise4
         //TODO: print all vowels using for and foreach
         static void Main(string[] args)
         {
-            Console.Write("Enter your name: ");
-            string name = Console.ReadLine();
-            Console.Write("Enter your name: ");
-            int age = Convert.ToInt32( Console.ReadLine());
-            if (age > 45)
+            char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+
+            foreach (char i in vowels)
             {
-                Console.WriteLine($"Hi, {name} You are old as fuck");
+                Console.WriteLine(vowels);
             }
-            else
+
+            for (int i = 0; i < vowels.Length; i++)
             {
-                Console.WriteLine($"Hi, {name} You are {age} old");
+                Console.WriteLine(vowels[i]);
             }
             Console.ReadKey();
         }
