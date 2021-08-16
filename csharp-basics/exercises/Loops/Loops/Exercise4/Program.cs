@@ -1,27 +1,29 @@
-﻿namespace Exercise4
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercise4
 {
     class Program
     {
         //TODO: print all vowels using for and foreach
         static void Main(string[] args)
         {
-            char[] vowels = {'a', 'e', 'i', 'o', 'u'};
-
-            /*
-            todo - use for
-            for (?) 
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.Write("Enter your name: ");
+            int age = Convert.ToInt32( Console.ReadLine());
+            if (age > 45)
             {
-                Console.WriteLine(vowels[i]);
+                Console.WriteLine($"Hi, {name} You are old as fuck");
             }
-            */
-
-            /*
-            todo - use foreach
-            for (?) 
+            else
             {
-                Console.WriteLine(vowel);
+                Console.WriteLine($"Hi, {name} You are {age} old");
             }
-            */
+            Console.ReadKey();
         }
     }
 }
