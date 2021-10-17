@@ -18,6 +18,15 @@ namespace ListExercise7
                 "White",
                 "Black"
             };
+            if (colors.Contains("White"))
+            {
+                Console.WriteLine("Found the element");
+            }
+            else 
+            {
+                Console.WriteLine("There is no such element");
+            }
+            Console.ReadKey();
 
             //      TODO: Check if list contains "White" element
             //        if (...) 

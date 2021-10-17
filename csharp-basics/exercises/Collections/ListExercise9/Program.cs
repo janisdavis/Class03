@@ -19,20 +19,23 @@ namespace ListExercise9
                 "Pink"
             };
 
-            Console.WriteLine(string.Join(",", firstList));
-
             var secondList = new List<string>
             {
                 "Red",
                 "Green",
                 "Black",
                 "White",
-                "Pink"
+                "Pink",
+                "Pink Drug Lord"
             };
 
+            Console.WriteLine(string.Join(",", firstList));
             Console.WriteLine(string.Join(",", secondList));
             //TODO: Write a C# program to join two lists.
             //...
+            firstList.AddRange(secondList);
+            Console.WriteLine(string.Join(",", firstList));
+            Console.ReadKey();
         }
     }
 }
