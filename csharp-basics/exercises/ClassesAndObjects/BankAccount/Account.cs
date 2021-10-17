@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankAccount
 {
-    class Account
+    public class Account
     {
         string _name;
         double _balance;

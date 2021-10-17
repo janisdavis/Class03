@@ -16,7 +16,7 @@ namespace Exercise4
             myArray[1] = glass;
             myArray[2] = spiderMan;
 
-            var neededMovies = Movie.getPG(myArray);
+            var neededMovies = Movie.GetPG(myArray);
 
             foreach (var element in neededMovies)
             {

@@ -9,7 +9,6 @@ namespace Exercise5
         private int _day;
         private int _month;
         private int _year;
-
         public Date(int day, int month, int year)
             {
             _day = day;
@@ -20,7 +19,5 @@ namespace Exercise5
         {
             Console.WriteLine($"{_month}/{_day}/{_year}");
         }
-        
     }
-    
 }

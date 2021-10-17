@@ -35,7 +35,7 @@ namespace Exercise4
             return _title;
         }
         
-        public static Movie[] getPG(Movie[] movie)
+        public static Movie[] GetPG(Movie[] movie)
         {
             Movie[] pgMovie = new Movie[movie.Length];
 
