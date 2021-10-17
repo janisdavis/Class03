@@ -8,15 +8,15 @@ namespace Exercise1
         {
 
             Console.WriteLine("The first 10 natural numbers are: ");
-            for (int i = 1; i < 11; i++)
+            for (int i = 0; i < 10; i++)
             {
-                naturalNumbers(i);
+                NaturalNumbers(i);
 
             }
             Console.ReadKey();
 
         }
-        static void naturalNumbers(int num)
+        static void NaturalNumbers(int num)
             {
                 Console.Write($"{num}");
             }

@@ -30,7 +30,6 @@ namespace Exercise6
                 else
                 {
                     Console.Write(i);
-                    
                 }
                 Console.Write(" ");
                 if (i % 20 == 0) 

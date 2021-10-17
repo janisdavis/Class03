@@ -14,7 +14,6 @@ namespace Exercise10
 
             for (int i = minNumber; i <= maxNumber; i++)
             {
-
                 for (int j = 0; j <= maxNumber - minNumber; j++)
                 {
                     var value = i + j;
@@ -26,7 +25,6 @@ namespace Exercise10
                     Console.Write(value + " ");
                 }
                 Console.WriteLine();
-
             }
             Console.ReadKey();
         }
