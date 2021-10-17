@@ -7,14 +7,23 @@ namespace SumAverageRunningInt
         static void Main(string[] args)
         {
             var sum = 0;
-            int average;
+            int count = 0;
+            double average;
+
             const int lowerBound = 1;
             const int upperBound = 100;
 
             for (var number = lowerBound; number <= upperBound; ++number) 
             {
                 sum += number;
+                ++number;
             }
+
+            average = sum / (double)count;
+
+            Console.WriteLine($"The sum of {lowerBound} and {upperBound} is {sum}");
+            Console.WriteLine($"The average is {Math.Round(average, 2)}");
+            Console.ReadKey();
         }
     }
 }

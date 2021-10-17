@@ -11,14 +11,22 @@ namespace ListExercise4
         private static void Main(string[] args)
         {
             // Create a list and add some colors to the list
-            var colors = new List<string>
+            var colors = new List<string>();
             {
-                "Red",
-                "Green",
-                "Orange",
-                "White",
-                "Black"
-            };
+                colors.Add("Red");
+                colors.Add("Green");
+                colors.Add("Orange");
+                colors.Add("White");
+                colors.Add("Black");
+
+                string element1 = colors[0];
+                string element3 = colors[3];
+                Console.WriteLine("First element: " + element1);
+                Console.WriteLine("Third element: " + element3);
+                
+                Console.ReadKey();
+
+            }
 
             //fixme
             //string element = ...;

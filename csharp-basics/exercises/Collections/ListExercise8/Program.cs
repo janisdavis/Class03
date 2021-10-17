@@ -28,7 +28,9 @@ namespace ListExercise8
             //Collections....
 
             Console.Write("List after sort: ");
+            colors.Sort();
             Console.WriteLine(string.Join(",", colors));
+            Console.ReadKey();
         }
     }
 }

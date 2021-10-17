@@ -26,7 +26,9 @@ namespace ListExercise10
             //...
 
             Console.WriteLine("New array list: ");
+            colors.Clear();
             Console.WriteLine(string.Join(",", colors));
+            Console.ReadKey();
         }
     }
 }
